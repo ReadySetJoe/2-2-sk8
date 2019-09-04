@@ -1,0 +1,110 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: unset;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+article {
+  background: #fff;
+  padding: 30px;
+  margin: 5px;
+}
+
+#navigation > a {
+  margin: 6px;
+  background: #C1021B;
+}
+#navigation >a> div > span {
+  color: #fff;
+}
+#navigation>a>div>span::before {
+  content: "";
+  width: 16px;
+  height: 3px;
+  background: #fff;
+}
+#navigation>a>div>span::after {
+  width: 16px;
+  height: 3px;
+  background: #fff;
+}
+
+/* ***CAROUSEL**** */
+
+#carousel {
+  height: 30vw;
+  min-height: 300px;
+  overflow: hidden;
+  background: url("./images/top-image.png") no-repeat 35% 25%;
+  position: relative;
+  border: solid 5px #fff;
+}
+
+
+#carousel > .grid {
+  opacity: 0.3;
+}
+
+#carousel > .logo {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* ***********Skateboarders******** */
+.skateboarder {
+  position: relative;
+}
+
+.skateboarder > img {
+
+}
+.skateboarder > img > span {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 50%;
+  left: 50%;
+}
+
+/* media query with last skater using 2x the height dimension
+of the other photos and using object-fill: cover or none */
+
+/* **********skateboards*********  */
+
+#skateboards {
+  background: #fff;
+}
+
+#skateboards > div {
+  height: 260px;
+  width: 62px;
+}
+
+#skateboards > div > img {
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-100%);
+  width: 260px;
+}
