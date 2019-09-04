@@ -150,9 +150,6 @@ article > p {
       text-align: center;
 }
 
-/* media query with last skater using 2x the height dimension
-of the other photos and using object-fill: cover or none */
-
 /* **********skateboards*********  */
 
 #skateboards {
@@ -168,6 +165,7 @@ of the other photos and using object-fill: cover or none */
   transform-origin: top left;
   transform: rotate(90deg) translateY(-100%);
   width: 260px;
+  max-width: 260px;
 }
 
 
