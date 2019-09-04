@@ -24,10 +24,18 @@ a:hover {
   text-decoration: none;
 }
 
+.container > div {
+  max-width: 987px;
+}
+
 article {
   background: #fff;
   padding: 30px;
   margin: 5px;
+}
+
+.posts > div {
+  padding: 0;
 }
 
 #navigation > a {
@@ -38,15 +46,10 @@ article {
   color: #fff;
 }
 #navigation>a>div>span::before {
-  content: "";
-  width: 16px;
-  height: 3px;
-  background: #fff;
+  content: " - ";
 }
 #navigation>a>div>span::after {
-  width: 16px;
-  height: 3px;
-  background: #fff;
+  content: " - ";
 }
 
 /* ***CAROUSEL**** */
@@ -75,18 +78,36 @@ article {
 
 /* ***********Skateboarders******** */
 .skateboarder {
+  padding: 5px;
   position: relative;
 }
 
 .skateboarder > img {
-
+  border: solid 5px #fff;
 }
-.skateboarder > img > span {
+
+.col-md-8 > div > div > img {
+  height: 222px;
+  object-fit: none;
+}
+
+.col-md-4 > img {
+  height: 454px;
+  object-fit: none;
+}
+
+#LanceMountain > img {
+  object-position: 100% 0;
+}
+
+.skateboarder > span {
+  color: #fff;
   position: absolute;
   top: 50%;
   bottom: 50%;
   right: 50%;
   left: 50%;
+
 }
 
 /* media query with last skater using 2x the height dimension
