@@ -1,11 +1,6 @@
-
+/* ************GLOBAL************* */
 * {
   box-sizing: border-box;
-}
-
-body {
-  background: url("./images/bg.jpg") no-repeat;
-  background-size: cover;
 }
 
 img {
@@ -24,31 +19,70 @@ a:hover {
   text-decoration: none;
 }
 
+body {
+  background: url("./images/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
 .container > div {
   max-width: 987px;
 }
 
-article {
-  background: #fff;
-  padding: 30px;
+#posts > div {
   margin: 5px;
-}
-
-.posts > div {
   padding: 0;
 }
 
-#navigation > a {
-  margin: 6px;
-  background: #C1021B;
+article {
+height: 350px;
+  background: #fff;
+  padding: 30px;
 }
-#navigation >a> div > span {
+
+article > p {
+  height: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#socialmedia > div {
+  opacity: 0.9;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  border-bottom: 5px solid grey;
+}
+
+#socialmedia > div > svg {
+  height: 100%;
+  padding: 15px;
+  width: 100%;
+}
+
+#fbicon {background: #44529C;}
+#rssicon {background: #D49000;}
+#twittericon {background: #6689CC;}
+#youtubeicon {background: #BF2717;}
+
+#navigation > div {
+  margin: 5px;
+  background: #C1021B;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border-bottom: 5px solid grey;
+}
+
+#navigation > div > a {
+  vertical-align: -webkit-baseline-middle;
+}
+#navigation > div > a > span {
   color: #fff;
 }
-#navigation>a>div>span::before {
+#navigation > div > a > span::before {
   content: " - ";
 }
-#navigation>a>div>span::after {
+#navigation > div > a > span::after {
   content: " - ";
 }
 
@@ -77,9 +111,14 @@ article {
 
 
 /* ***********Skateboarders******** */
+#sk8rs img {
+  object-fit: none;
+}
+
 .skateboarder {
   padding: 5px;
   position: relative;
+
 }
 
 .skateboarder > img {
@@ -88,26 +127,27 @@ article {
 
 .col-md-8 > div > div > img {
   height: 222px;
-  object-fit: none;
 }
 
 .col-md-4 > img {
   height: 454px;
-  object-fit: none;
 }
 
 #LanceMountain > img {
   object-position: 100% 0;
 }
 
-.skateboarder > span {
+.skateboarder > p {
   color: #fff;
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-  right: 50%;
-  left: 50%;
-
+      font-family: "Bowlbly One SC", sans-serif;
+      text-transform: uppercase;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 39%;
+      transform: translateX(-50%);
+      font-size: 38px;
+      text-align: center;
 }
 
 /* media query with last skater using 2x the height dimension
@@ -128,4 +168,22 @@ of the other photos and using object-fill: cover or none */
   transform-origin: top left;
   transform: rotate(90deg) translateY(-100%);
   width: 260px;
+}
+
+
+/* ************MEDIA QUERY*********** */
+
+@media (max-width: 768px) {
+  #sk8rs img {
+    object-fit: cover;
+  }
+  #skateboards > div {
+    height: 62px;
+    width: 100%;
+    text-align: center;
+  }
+  #skateboards > div > img {
+    transform: rotate(0);
+  }
+
 }
