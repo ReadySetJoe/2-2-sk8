@@ -118,7 +118,6 @@ article > p {
 .skateboarder {
   padding: 5px;
   position: relative;
-  margin: 10px;
 
 }
 
@@ -149,6 +148,7 @@ article > p {
       transform: translateX(-50%);
       font-size: 38px;
       text-align: center;
+      padding: 5px;
 }
 
 /* **********skateboards*********  */
